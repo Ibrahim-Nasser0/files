@@ -1,0 +1,149 @@
+.workflows {
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.wf-selector {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
+}
+
+.wf-selector.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.wf-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  border-color: var(--wf-color);
+}
+
+.wf-btn.active {
+  background: var(--wf-color);
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.wf-display {
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+.wf-display.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wf-steps {
+  display: none;
+}
+
+.wf-steps.active {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wf-step-node {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 24px;
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.wf-step-node:hover {
+  border-color: rgba(99, 102, 241, 0.4);
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .wf-step-node:hover {
+  transform: translateX(-4px);
+}
+
+.wf-node-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.wf-step-number {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.wf-phase-tag {
+  font-family: monospace;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.05em;
+}
+
+.wf-step-box {
+  flex: 1;
+}
+
+.wf-step-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.wf-arrow-connector {
+  font-size: 1rem;
+  color: #64748b;
+  flex-shrink: 0;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .wf-step-node {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+  .wf-step-text {
+    font-size: 0.9rem;
+  }
+}

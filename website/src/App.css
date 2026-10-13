@@ -1,0 +1,103 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+}
+
+/* Floating Back To Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 99;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 28px;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.6);
+}
+
+/* High Quality Print Styles for PDF Export */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #1a202c !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  .header,
+  .hero-bg,
+  .back-to-top,
+  .hamburger,
+  .lang-toggle,
+  .sim-controls,
+  .dash-main {
+    display: none !important;
+  }
+
+  section {
+    padding: 30px 0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    background: #ffffff !important;
+  }
+
+  .glass-card,
+  .feature-card,
+  .arch-layer-card,
+  .rule-card,
+  .team-card {
+    background: #f8fafc !important;
+    color: #1e293b !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  h1, h2, h3, h4 {
+    color: #0f172a !important;
+  }
+
+  p, span, li {
+    color: #334155 !important;
+  }
+
+  .section-header,
+  .arch-grid,
+  .risk-interactive-showcase,
+  .risk-rules-grid,
+  .team-grid,
+  .roadmap-tabs,
+  .roadmap-active-card {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

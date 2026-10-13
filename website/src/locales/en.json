@@ -1,0 +1,420 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "features": "Modules",
+    "users": "Roles & Access",
+    "workflows": "Operations",
+    "ai": "AI & Career Engine",
+    "architecture": "Architecture",
+    "risk": "Risk Bylaws",
+    "roadmap": "Milestones",
+    "team": "Engineering Team",
+    "downloadPdf": "Export Report (PDF)"
+  },
+  "hero": {
+    "badge": "Institutional Academic Platform v2.6 · Higher Ed Standard",
+    "title": "The Unified Digital Platform for University Management",
+    "subtitle": "An integrated operating environment connecting student records, dynamic QR attendance, automated risk detection, and machine-learning-driven career pathway modeling.",
+    "cta1": "Explore Platform Capabilities",
+    "cta2": "Export Technical Whitepaper (PDF)",
+    "stat1": "17+",
+    "stat1Label": "Functional Modules",
+    "stat2": "4",
+    "stat2Label": "RBAC Security Levels",
+    "stat3": "99.8%",
+    "stat3Label": "Attendance Precision",
+    "stat4": "100%",
+    "stat4Label": "Academic Bylaw Compliance"
+  },
+  "overview": {
+    "sectionTitle": "Institutional Challenge & StudySync",
+    "sectionSubtitle": "Transitioning from fragmented campus tools to a unified academic operating architecture.",
+    "problemTitle": "Fragmented Campus Operations & Paper Records",
+    "problemText": "Universities struggle with data silos spanning physical paper rosters, informal group chats, and detached course folders. This fragmentation obscures student attendance trends, leads to abrupt academic exclusions due to lack of early intervention, and leaves students blind to how their coursework connects to industry requirements.",
+    "solutionTitle": "A Connected, Policy-Aware Academic Platform",
+    "solutionText": "StudySync delivers a real-time, institutionally compliant backbone: tamper-proof Dynamic QR check-in, real-time tracking against university exclusion limits (75%), and an ML curriculum classifier that aligns course electives with market skill benchmarks."
+  },
+  "features": {
+    "sectionTitle": "Core Functional Modules",
+    "sectionSubtitle": "A modular architecture engineered across every phase of student and faculty operations.",
+    "items": [
+      {
+        "icon": "book",
+        "title": "Course & Syllabus Management",
+        "desc": "Centralized lecture repository, readings, and verified announcements with granular section-level permissions."
+      },
+      {
+        "icon": "qr",
+        "title": "Dynamic QR Attendance Engine",
+        "desc": "Cryptographically rotating QR codes refreshing every 15 seconds to prevent proxy attendance and unauthorized remote check-ins."
+      },
+      {
+        "icon": "chart",
+        "title": "Assessments & GPA Simulator",
+        "desc": "Real-time midterm and coursework gradebook with cumulative GPA impact projections."
+      },
+      {
+        "icon": "calendar",
+        "title": "Unified Academic Calendar",
+        "desc": "Conflict-free schedule synchronization for lectures, assignment milestones, and final exam periods."
+      },
+      {
+        "icon": "bell",
+        "title": "Institutional Push Notifications",
+        "desc": "Multi-channel automated alerts for submission deadlines, faculty notices, and urgent administrative alerts."
+      },
+      {
+        "icon": "target",
+        "title": "Career Pathway Alignment",
+        "desc": "Natural Language Processing models that evaluate syllabus outcomes against contemporary job market roles."
+      },
+      {
+        "icon": "compass",
+        "title": "Elective Recommendation Engine",
+        "desc": "Constraint-checked course recommendations accounting for prerequisites, credit hour caps, and personal focus."
+      },
+      {
+        "icon": "cpu",
+        "title": "Curriculum-Bound AI Learning Tools",
+        "desc": "Structural lecture distillations, practice problem generators, and exam flashcard sets grounded in course notes."
+      },
+      {
+        "icon": "briefcase",
+        "title": "Internship & Opportunity Center",
+        "desc": "Vetted repository of summer internships, technical hackathons, and scholarships matched to academic trajectories."
+      },
+      {
+        "icon": "folder",
+        "title": "Personal Academic Workspace",
+        "desc": "Secure cloud workspace for student research notes, lab deliverables, and graduation project repositories."
+      },
+      {
+        "icon": "alert",
+        "title": "Early Academic Warning System",
+        "desc": "Continuous policy evaluation flagging students approaching attendance exclusion thresholds (75%) or GPA probation."
+      },
+      {
+        "icon": "git-network",
+        "title": "Prerequisite Graph Visualizer",
+        "desc": "Interactive dependency tree mapping prerequisite courses, concurrent requisites, and multi-semester progression."
+      }
+    ]
+  },
+  "users": {
+    "sectionTitle": "Role-Based Access & Governance",
+    "sectionSubtitle": "Dedicated operational consoles tailored for every stakeholder across the university.",
+    "roles": [
+      {
+        "title": "University Student",
+        "icon": "user",
+        "badge": "Student Portal",
+        "desc": "A personalized dashboard enabling instant attendance verification, academic standing tracking, early risk alerts, and intelligent career advising.",
+        "capabilities": [
+          "Instant lecture check-in via rotating Dynamic QR scans",
+          "Continuous tracking of completed credit hours and GPA standing",
+          "Automated alerts prior to breaching course exclusion limits (75%)",
+          "Interactive prerequisite tree and elective eligibility explorer",
+          "Curriculum-grounded lecture summaries and self-testing quizzes",
+          "Adaptive study schedules prior to midterm and final exam weeks",
+          "Personalized internship suggestions based on enrolled coursework"
+        ]
+      },
+      {
+        "title": "Faculty Professor",
+        "icon": "teacher",
+        "badge": "Faculty Console",
+        "desc": "Comprehensive instructional console to manage course sections, initiate secure attendance sessions, publish grades, and curate AI study aids.",
+        "capabilities": [
+          "Launch live attendance check-ins with expiring QR tokens",
+          "Process official medical excuses and manual attendance overrides",
+          "Publish coursework assessments, quizzes, and midterm marks",
+          "Generate and export course exclusion rosters for dean office review",
+          "Organize structured course modules, slide decks, and assignments",
+          "Review and calibrate AI-generated question banks and summaries"
+        ]
+      },
+      {
+        "title": "Teaching Assistant",
+        "icon": "terminal",
+        "badge": "Assistant Console",
+        "desc": "Operational tools built for laboratory sessions, discussion recitations, and hands-on assignment evaluation.",
+        "capabilities": [
+          "Administer laboratory and practical section attendance",
+          "Record grades for lab assignments and project deliverables",
+          "Distribute supplementary tutorials and software dependencies",
+          "Document student absence rationales with immutable audit trails",
+          "Escalate struggling student trends directly to lead faculty"
+        ]
+      },
+      {
+        "title": "Academic Administration",
+        "icon": "shield",
+        "badge": "Admin Governance",
+        "desc": "Centralized system oversight to enforce institutional bylaws, configure credit constraints, and audit curriculum health.",
+        "capabilities": [
+          "Define course catalog requirements, credits, and prerequisites",
+          "Configure college-wide attendance exclusion thresholds",
+          "Audit ML career-track classifications with Human-in-the-Loop review",
+          "Export accreditation metrics, department KPIs, and cohort reports",
+          "Manage faculty appointments, student enrollments, and section rosters"
+        ]
+      }
+    ]
+  },
+  "workflows": {
+    "sectionTitle": "End-to-End Operational Workflows",
+    "sectionSubtitle": "Seamless orchestration connecting user interfaces to backend policy validation engines.",
+    "items": [
+      {
+        "title": "Lecture Publishing & Material Ingestion",
+        "steps": [
+          "Faculty uploads lecture deck or syllabus document",
+          "System indexes content and connects to course question bank",
+          "Automated broadcast notification sent to enrolled students",
+          "Structured summary generated via curriculum AI model",
+          "Self-testing practice questions unlocked on student portal"
+        ]
+      },
+      {
+        "title": "Dynamic QR Attendance Verification",
+        "steps": [
+          "Professor launches session displaying 15-second rotating QR",
+          "Student scans token using authenticated mobile client",
+          "Cryptographic hash validated against current active window",
+          "Attendance record logged into database with immutable timestamp",
+          "Exclusion risk recalculated and live percentage updated"
+        ]
+      },
+      {
+        "title": "Early Risk Detection & Intervention",
+        "steps": [
+          "Student absence breaches institutional warning boundary",
+          "Rule engine evaluates college bylaws against historical attendance",
+          "Official advisory notification dispatched to student portal",
+          "Flag escalated to academic advisor dashboard for intervention",
+          "Student guided to review absences before final exclusion cutoff"
+        ]
+      },
+      {
+        "title": "Elective Recommendation & Constraint Filtering",
+        "steps": [
+          "Student designates target industry career track",
+          "Filter removes completed courses and checks prerequisites",
+          "Inference pipeline scores remaining courses by relevancy",
+          "Candidate courses ranked balancing credit hours and difficulty",
+          "Recommended schedule presented for academic advisor sign-off"
+        ]
+      },
+      {
+        "title": "Exam Scheduling & Adaptive Study Planning",
+        "steps": [
+          "Instructor schedules midterm or final examination",
+          "Synced across all enrolled students' centralized calendars",
+          "Automated reminder triggers scheduled leading up to exam date",
+          "Event flagged in active 'Next Milestone' dashboard module",
+          "Personal study routine dynamically recalibrates review sessions"
+        ]
+      }
+    ]
+  },
+  "ai": {
+    "sectionTitle": "Machine Learning & Curriculum Intelligence",
+    "sectionSubtitle": "Purpose-built models engineered to support academic advising, with strict human oversight.",
+    "mlTitle": "Course-to-Career Track Classification Engine",
+    "mlDesc": "A multi-label natural language processing model trained on university course descriptions, syllabi, and ABET accreditation outcomes to compute semantic alignment with industry career tracks with calibrated probability scores.",
+    "mlType": "Multi-Label Text Classification",
+    "mlInput": "Course descriptions, learning outcomes, textbook topics, syllabi",
+    "mlOutput": "Target career tracks mapped with statistical confidence scores",
+    "mlBaseline": "TF-IDF Vectorizer + Calibrated Logistic Regression",
+    "mlReview": "Mandatory Human-in-the-Loop review by academic department chairs",
+    "exampleTitle": "Live Model Inference Simulation",
+    "exampleCourse": "CS342: Advanced Mobile Systems Architecture",
+    "exampleResults": [
+      { "track": "Mobile Systems Engineering", "score": 95, "status": "strong" },
+      { "track": "Enterprise Software Engineering", "score": 78, "status": "strong" },
+      { "track": "Embedded Systems & IoT", "score": 38, "status": "weak" },
+      { "track": "Applied Data Science", "score": 8, "status": "weak" }
+    ],
+    "toolsTitle": "Curriculum-Bound Study Copilots",
+    "tools": [
+      {
+        "icon": "book",
+        "title": "Structural Lecture Distiller",
+        "desc": "Extracts definitions, algorithms, and core formulas anchored to specific course slide numbers."
+      },
+      {
+        "icon": "sparkles",
+        "title": "Formative Assessment Generator",
+        "desc": "Creates multiple-choice, code snippet, and conceptual questions calibrated by difficulty."
+      },
+      {
+        "icon": "terminal",
+        "title": "Reference-Grounded Academic Q&A",
+        "desc": "Answers student inquiries citing provided textbook chapters and lecture notes strictly."
+      },
+      {
+        "icon": "calendar",
+        "title": "Adaptive Study Schedule Planner",
+        "desc": "Allocates review blocks based on exam weights, available study windows, and topic density."
+      }
+    ],
+    "recTitle": "Course Recommendation Pipeline",
+    "recPhase1": "Phase 1: Deterministic Constraint Filtering",
+    "recPhase1Steps": ["Course Catalog", "Exclude Passed Courses", "Validate Prerequisites", "Validate Corequisites", "Enforce Credit Limits", "Eligible Offerings"],
+    "recPhase2": "Phase 2: Weighted Relevancy Scoring",
+    "recFactors": [
+      { "name": "Career Track Relevancy", "weight": "45%" },
+      { "name": "Skill & Outcome Alignment", "weight": "30%" },
+      { "name": "Semester Workload Preference", "weight": "15%" },
+      { "name": "Student Historical Interest", "weight": "10%" }
+    ]
+  },
+  "architecture": {
+    "sectionTitle": "System Architecture (Enterprise Standard)",
+    "sectionSubtitle": "A multi-tier, modular design engineered for high availability, auditability, and institutional scale.",
+    "layers": [
+      {
+        "id": "frontend",
+        "title": "Presentation & Experience Tier",
+        "badge": "React 19 + Vite Engine",
+        "desc": "Ultra-lightweight Single Page Application delivering high rendering speed, zero-dependency CSS, and seamless RTL/LTR bilingual switching.",
+        "tags": ["React 19 Core", "Vite Bundler", "Bilingual RTL/LTR", "Zero-Dependency CSS", "PWA Offline Ready"]
+      },
+      {
+        "id": "gateway",
+        "title": "Security, Identity & API Gateway",
+        "badge": "Security & Identity",
+        "desc": "Rigorous security governance utilizing RS256 JWT tokens, granular Role-Based Access Control (RBAC), and rate-limiting safeguards.",
+        "tags": ["JWT Authentication", "Role-Based Access Control", "Rate Limiting", "CORS Protection", "Audit Logs"]
+      },
+      {
+        "id": "services",
+        "title": "Core Domain Microservices",
+        "badge": "Micro-Services Cluster",
+        "desc": "Autonomous microservices handling course catalogs, rotating QR verification, university bylaw rules, and ML inference pipelines.",
+        "tags": ["Course Service", "Dynamic QR Engine", "Academic Risk Pipeline", "ML Inference API", "Event Dispatcher"]
+      },
+      {
+        "id": "data",
+        "title": "Data Persistence & Cache Tier",
+        "badge": "High Availability",
+        "desc": "ACID-compliant relational storage ensuring transcript integrity, coupled with sub-millisecond in-memory cache for attendance check-ins.",
+        "tags": ["Relational SQL Store", "In-Memory Cache", "Encrypted Data at Rest", "Automated Daily Backups"]
+      }
+    ],
+    "highlights": [
+      { "title": "Sub-150ms QR Validation", "desc": "Zero classroom congestion during rapid lecture check-in periods" },
+      { "title": "Strict Privilege Isolation", "desc": "Impenetrable boundary separating student, instructor, and admin scopes" },
+      { "title": "Domain-Trained AI Models", "desc": "Models bounded strictly to university curriculum and course syllabi" },
+      { "title": "Institutional Scalability", "desc": "Engineered to effortlessly sustain thousands of concurrent exam inquiries" }
+    ]
+  },
+  "risk": {
+    "sectionTitle": "Early Risk Detection & Exclusion Prevention",
+    "sectionSubtitle": "Automated monitoring enforcing university bylaws to safeguard students before exclusion cutoffs.",
+    "rules": [
+      { "condition": "Attendance > 85%", "status": "Good Standing (Safe)", "level": "safe" },
+      { "condition": "Attendance 80% - 85%", "status": "Early Advisory (Needs Attention)", "level": "attention" },
+      { "condition": "Attendance 75% - 80%", "status": "First Warning (Approaching Exclusion Limit)", "level": "risk" },
+      { "condition": "Attendance ≤ 75%", "status": "Official Exclusion (Bylaw Breach)", "level": "critical" },
+      { "condition": "Unsubmitted Tasks ≥ 2", "status": "Coursework Deficit Alert", "level": "risk" },
+      { "condition": "Cumulative GPA < 2.0", "status": "Academic Probation Warning", "level": "critical" }
+    ],
+    "exampleTitle": "Official Academic System Advisory Notice",
+    "exampleText": "Official Notice: Your recorded attendance in 'Systems Architecture' currently stands at 77%. The college exclusion limit is set at 75%. One additional unexcused absence will trigger an immediate recommendation for course exclusion."
+  },
+  "roadmap": {
+    "sectionTitle": "Engineering Roadmap & Deployment Phases",
+    "sectionSubtitle": "A strategic timeline balancing essential campus operations with progressive machine learning enhancements.",
+    "phases": [
+      {
+        "title": "Phase 1: Core Campus Foundation (Core LMS)",
+        "icon": "check",
+        "items": [
+          "Enterprise Accounts & RBAC Identity Governance",
+          "Course Rosters, Materials, and Announcements",
+          "Encrypted Dynamic QR Attendance Check-In",
+          "Coursework & Midterm Assessment Records",
+          "Unified Academic Calendar & System Notifications",
+          "Rules-Based Academic Risk & Exclusion Detection",
+          "Course-to-Career ML Classifier (V1)"
+        ]
+      },
+      {
+        "title": "Phase 2: Curriculum Intelligence (Intelligence Tier)",
+        "icon": "zap",
+        "items": [
+          "Structural Lecture Distillations & Summaries",
+          "Adaptive Practice Question Bank Generation",
+          "Reference-Grounded Course Copilot Assistant",
+          "Student Personal Academic Cloud Workspace",
+          "Curated Internship & Research Opportunity Hub",
+          "Custom Notification Channel Preferences"
+        ]
+      },
+      {
+        "title": "Phase 3: Operational Automation (Advanced Operations)",
+        "icon": "layers",
+        "items": [
+          "Adaptive Pre-Exam Study Routine Scheduling",
+          "Automated Skill Matching with Research Internships",
+          "Faculty Office Hours & Advising Slot Booking",
+          "Optical Mark Reader / SIS Gradebook Import",
+          "Offline Attendance Verification with Queued Sync"
+        ]
+      },
+      {
+        "title": "Phase 4: Smart Campus Vision (Ecosystem)",
+        "icon": "compass",
+        "items": [
+          "Auditorium Geofenced / BLE Presence Validation",
+          "Study Hall & Laboratory Seat Reservation",
+          "Full SIS Integration with University Enterprise Systems",
+          "Predictive Multi-Semester Student Attrition Model",
+          "Automated Class Timetable Contingency Rescheduling"
+        ]
+      }
+    ]
+  },
+  "team": {
+    "sectionTitle": "Academic Research & Engineering Team",
+    "sectionSubtitle": "Multidisciplinary engineers specializing in enterprise software architecture and applied AI.",
+    "members": [
+      {
+        "name": "Ibrahim Nasser",
+        "role": "Project Manager & Mobile Developer",
+        "icon": "terminal",
+        "bio": "Leading end-to-end project management and mobile application architecture, spearheading real-time dynamic QR attendance workflows and mobile client experiences.",
+        "tags": ["Project Management", "Mobile Development", "System Design"]
+      },
+      {
+        "name": "Ahmed El-Shazly",
+        "role": "Web Developer",
+        "icon": "code",
+        "bio": "Architecting the central web portal and interactive UI consoles with strict performance budgets and native bilingual RTL/LTR responsive design.",
+        "tags": ["Frontend Architecture", "React & Vite", "UI/UX Engineering"]
+      },
+      {
+        "name": "Mohammed Sayed",
+        "role": "Backend Developer",
+        "icon": "database",
+        "bio": "Designing core backend domain microservices and relational database schemas, enforcing granular RBAC access controls and student record integrity.",
+        "tags": ["Backend Services", "Database Design", "API Architecture"]
+      },
+      {
+        "name": "Amr Atef",
+        "role": "Backend Developer",
+        "icon": "cpu",
+        "bio": "Engineering high-throughput backend services, cryptographic real-time attendance validation engines, and integration with academic risk models.",
+        "tags": ["Microservices", "Real-Time Engines", "Cloud Services"]
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "The Unified Digital Platform for University Management",
+    "rights": "All Rights Reserved © 2026 StudySync — Academic Digital Transformation Initiative",
+    "quickLinks": "System Navigation",
+    "contact": "Institutional Governance",
+    "systemStatus": "All Systems & Attendance Engines Fully Operational"
+  }
+}
