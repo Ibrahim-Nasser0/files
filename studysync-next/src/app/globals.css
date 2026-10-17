@@ -1,0 +1,282 @@
+@import "tailwindcss";
+
+/* ===================================================================
+   StudySync Design System — Institutional Higher Education Platform
+   Clean, Authoritative, Contemporary Enterprise Architecture
+   =================================================================== */
+
+:root {
+  /* Brand Palettes — Oxford & Cobalt Blues (Authoritative Academic Standard) */
+  --primary: #1e40af;
+  --primary-hover: #1d4ed8;
+  --primary-light: #3b82f6;
+  --primary-surface: #eff6ff;
+  --primary-border: #bfdbfe;
+  --primary-text: #1e3a8a;
+
+  /* Verified Status Accents */
+  --accent: #059669;
+  --accent-hover: #047857;
+  --accent-surface: #ecfdf5;
+  --accent-border: #a7f3d0;
+  --accent-text: #065f46;
+
+  /* Policy Bylaw Warning States */
+  --warning: #d97706;
+  --warning-surface: #fffbeb;
+  --warning-border: #fde68a;
+  --warning-text: #92400e;
+
+  /* Exclusion / Critical States */
+  --danger: #dc2626;
+  --danger-surface: #fef2f2;
+  --danger-border: #fecaca;
+  --danger-text: #991b1b;
+
+  /* Clean Institutional Surfaces & Contrast (Light Mode Default) */
+  --bg: #f8fafc;
+  --bg-subtle: #f1f5f9;
+  --surface: #ffffff;
+  --surface-hover: #f8fafc;
+  --surface-elevated: #ffffff;
+  --surface-subtle: #f1f5f9;
+
+  /* Refined Structural Borders */
+  --border: #e2e8f0;
+  --border-light: #f1f5f9;
+  --border-hover: #cbd5e1;
+  --border-focus: #3b82f6;
+  --card-border: #e2e8f0;
+
+  /* High-Contrast Typography */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  /* Depth & Elevation */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.07), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+  --shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.03);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 16px rgba(15, 23, 42, 0.04);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(226, 232, 240, 0.9);
+
+  /* Hero Gradients */
+  --hero-mesh: radial-gradient(at 0% 0%, rgba(239, 246, 255, 0.8) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(240, 253, 244, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(248, 250, 252, 1) 0px, transparent 50%);
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --header-height: 72px;
+}
+
+/* ===================================================================
+   Dark Theme — Deep Executive Cosmic Midnight & Glowing Grid
+   =================================================================== */
+html.dark,
+[data-theme="dark"] {
+  --primary: #38bdf8;
+  --primary-hover: #0ea5e9;
+  --primary-light: #7dd3fc;
+  --primary-surface: rgba(56, 189, 248, 0.12);
+  --primary-border: rgba(56, 189, 248, 0.3);
+  --primary-text: #7dd3fc;
+
+  --accent: #10b981;
+  --accent-hover: #34d399;
+  --accent-surface: rgba(16, 185, 129, 0.12);
+  --accent-border: rgba(16, 185, 129, 0.3);
+  --accent-text: #6ee7b7;
+
+  --warning: #f59e0b;
+  --warning-surface: rgba(245, 158, 11, 0.12);
+  --warning-border: rgba(245, 158, 11, 0.3);
+  --warning-text: #fcd34d;
+
+  --danger: #ef4444;
+  --danger-surface: rgba(239, 68, 68, 0.12);
+  --danger-border: rgba(239, 68, 68, 0.3);
+  --danger-text: #fca5a5;
+
+  --bg: #060914;
+  --bg-subtle: #0a0f21;
+  --surface: #0d1326;
+  --surface-hover: #131b34;
+  --surface-elevated: #16203d;
+  --surface-subtle: #0f162c;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --border-light: rgba(255, 255, 255, 0.04);
+  --border-hover: rgba(56, 189, 248, 0.25);
+  --border-focus: #38bdf8;
+  --card-border: rgba(255, 255, 255, 0.08);
+
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #060914;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.65);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.75);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.45);
+
+  --glass-bg: rgba(13, 19, 38, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --hero-mesh: radial-gradient(at 15% 15%, rgba(59, 130, 246, 0.18) 0px, transparent 55%),
+    radial-gradient(at 85% 25%, rgba(6, 182, 212, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 85%, rgba(99, 102, 241, 0.12) 0px, transparent 60%);
+}
+
+/* ===================================================================
+   Base Styles
+   =================================================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+html[dir="rtl"],
+html.font-ar,
+.font-ar {
+  font-family: var(--font-cairo), system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-hover);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Institutional Design System Utilities */
+.campus-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.campus-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.campus-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  background: var(--primary-surface);
+  border: 1px solid var(--primary-border);
+  color: var(--primary-text);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+html.dark .campus-badge {
+  color: var(--primary-light);
+}
+
+/* Directional Flip */
+[dir="rtl"] .arrow-dir {
+  transform: scaleX(-1);
+}
+
+/* Cosmic Perspective Grid Background */
+.cosmic-grid-bg {
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+}
+
+/* Cosmic Grid Fadeout for Seamless Section Connection */
+.cosmic-grid-fadeout {
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.15) 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(0, 0, 0, 0.15) 70%, transparent 100%);
+}
+
+/* Glowing Vibrant CTA Button */
+.btn-cyan-glow {
+  background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-cyan-glow:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%);
+  box-shadow: 0 0 35px rgba(6, 182, 212, 0.55);
+  transform: translateY(-1.5px);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-print,
+  header,
+  footer,
+  button {
+    display: none !important;
+  }
+
+  .campus-card {
+    border: 1px solid #d1d5db !important;
+    box-shadow: none !important;
+  }
+}
