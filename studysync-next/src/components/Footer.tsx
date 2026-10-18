@@ -47,15 +47,15 @@ export default function Footer() {
             <div className="flex flex-wrap gap-2 text-xs">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0d1326]/80 border border-slate-800 text-slate-300 font-medium">
                 <Icon name="shield-check" size={13} color="#10b981" />
-                <span>Higher Ed Standard</span>
+                <span>{isRTL ? 'معيار التعليم العالي' : 'Higher Ed Standard'}</span>
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0d1326]/80 border border-slate-800 text-slate-300 font-medium">
                 <Icon name="cpu" size={13} color="#06b6d4" />
-                <span>Curriculum ML</span>
+                <span>{isRTL ? 'ذكاء اصطناعي للمناهج' : 'Curriculum ML'}</span>
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0d1326]/80 border border-slate-800 text-slate-300 font-medium">
                 <Icon name="globe" size={13} color="#3b82f6" />
-                <span>Native Bilingual</span>
+                <span>{isRTL ? 'دعم كامل للغتين (RTL/LTR)' : 'Native Bilingual'}</span>
               </span>
             </div>
           </div>

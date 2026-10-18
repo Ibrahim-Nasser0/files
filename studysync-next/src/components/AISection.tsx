@@ -36,10 +36,10 @@ export default function AISection() {
             <div className="lg:col-span-7">
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded bg-indigo-950/70 border border-indigo-700/60 text-indigo-300 font-mono">
-                  NLP Curriculum Classifier
+                  {isRTL ? 'مصنف المناهج الأكاديمية (NLP)' : 'NLP Curriculum Classifier'}
                 </span>
                 <span className="text-xs font-mono font-bold text-emerald-400">
-                  ● Verified Pipeline
+                  {isRTL ? '● معالجة معتمدة' : '● Verified Pipeline'}
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">
@@ -52,7 +52,7 @@ export default function AISection() {
               <div className="grid grid-cols-2 gap-3">
                 <div className="p-3.5 rounded-xl bg-[#111933]/70 border border-slate-800">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
-                    Model Architecture
+                    {isRTL ? 'معمارية النموذج' : 'Model Architecture'}
                   </span>
                   <span className="text-xs font-bold text-white">
                     {t('ai.mlType')}
@@ -60,7 +60,7 @@ export default function AISection() {
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#111933]/70 border border-slate-800">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
-                    Input Ingestion
+                    {isRTL ? 'بيانات الإدخال' : 'Input Ingestion'}
                   </span>
                   <span className="text-xs font-bold text-white">
                     {t('ai.mlInput')}
@@ -68,7 +68,7 @@ export default function AISection() {
                 </div>
                 <div className="p-3.5 rounded-xl bg-[#111933]/70 border border-slate-800">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block mb-1">
-                    Prediction Target
+                    {isRTL ? 'هدف التنبؤ' : 'Prediction Target'}
                   </span>
                   <span className="text-xs font-bold text-white">
                     {t('ai.mlOutput')}
@@ -76,7 +76,7 @@ export default function AISection() {
                 </div>
                 <div className="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-800/60">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block mb-1">
-                    Governance Gate
+                    {isRTL ? 'بوابة الحوكمة' : 'Governance Gate'}
                   </span>
                   <span className="text-xs font-bold text-emerald-300">
                     {t('ai.mlReview')}
@@ -95,7 +95,7 @@ export default function AISection() {
                   </span>
                 </div>
                 <span className="font-mono text-[10px] text-cyan-400 uppercase tracking-wider font-bold">
-                  Syllabus Ingestion
+                  {isRTL ? 'معالجة التوصيف الأكاديمي' : 'Syllabus Ingestion'}
                 </span>
               </div>
 
@@ -111,7 +111,7 @@ export default function AISection() {
                       <div className="flex items-center justify-between text-xs font-bold mb-1.5">
                         <span className="text-slate-200">{r.track}</span>
                         <span className="font-mono text-cyan-400">
-                          {r.score}% Match
+                          {r.score}% {isRTL ? 'تطابق' : 'Match'}
                         </span>
                       </div>
                       <div className="w-full h-2 rounded-full bg-slate-900 overflow-hidden border border-slate-800">
@@ -159,7 +159,7 @@ export default function AISection() {
         <div className="p-6 sm:p-9 bg-[#0d1326]/90 border border-slate-800/80 rounded-3xl backdrop-blur-xl shadow-2xl">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/60 text-cyan-400">
-              Constraint-Satisfaction Engine
+              {isRTL ? 'محرك مطابقة الشروط واللوائح الأكاديمية' : 'Constraint-Satisfaction Engine'}
             </span>
           </div>
           <h3 className="text-2xl font-bold text-white mb-8">

@@ -107,10 +107,10 @@ export default function UserRoles() {
                 <div className="flex items-center justify-between pb-3 border-b border-[var(--border)] text-xs font-bold text-[var(--text-primary)]">
                   <span className="flex items-center gap-1.5">
                     <Icon name="terminal" size={14} color="#1e40af" />
-                    <span>Live Portal Interface</span>
+                    <span>{isRTL ? 'معاينة البوابة الحية' : 'Live Portal Interface'}</span>
                   </span>
                   <span className="text-[11px] text-emerald-600 dark:text-emerald-400 font-bold">
-                    ● Real-Time Feed
+                    {isRTL ? '● تدفق بيانات لحظي' : '● Real-Time Feed'}
                   </span>
                 </div>
 
@@ -120,28 +120,28 @@ export default function UserRoles() {
                   <div className="space-y-3 text-xs">
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg">
                       <span className="text-[11px] font-semibold text-[var(--text-muted)] block">
-                        Cumulative Attendance Standing
+                        {isRTL ? 'مؤشر الحضور التراكمي' : 'Cumulative Attendance Standing'}
                       </span>
                       <div className="flex items-center justify-between mt-1">
                         <span className="text-lg font-extrabold text-[var(--text-primary)]">
-                          94.2% · Good Standing
+                          {isRTL ? '94.2% · وضع آمن ومستقر' : '94.2% · Good Standing'}
                         </span>
                         <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                          Above 75% Bylaw
+                          {isRTL ? 'أعلى من حد اللائحة (75%)' : 'Above 75% Bylaw'}
                         </span>
                       </div>
                     </div>
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg flex items-center justify-between">
                       <div>
                         <span className="font-bold text-[var(--text-primary)] block">
-                          CS-402 Live Lecture
+                          {isRTL ? 'محاضرة مباشرة CS-402' : 'CS-402 Live Lecture'}
                         </span>
                         <span className="text-[11px] text-[var(--text-muted)]">
-                          Hall B-104 · QR Check-in Active
+                          {isRTL ? 'قاعة B-104 · تسجيل الحضور نشط' : 'Hall B-104 · QR Check-in Active'}
                         </span>
                       </div>
                       <span className="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 font-bold text-[11px]">
-                        Scan QR
+                        {isRTL ? 'مسح الباركود' : 'Scan QR'}
                       </span>
                     </div>
                   </div>
@@ -152,28 +152,28 @@ export default function UserRoles() {
                   <div className="space-y-3 text-xs">
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg">
                       <span className="text-[11px] font-semibold text-[var(--text-muted)] block">
-                        Lecture QR Broadcast Console
+                        {isRTL ? 'منصة بث كود حضور المحاضرة' : 'Lecture QR Broadcast Console'}
                       </span>
                       <div className="flex items-center justify-between mt-1">
                         <span className="text-base font-extrabold text-[var(--text-primary)]">
-                          CS-402 (Hall B-104)
+                          CS-402 {isRTL ? '(قاعة B-104)' : '(Hall B-104)'}
                         </span>
                         <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                          Rotating 15s
+                          {isRTL ? 'تدوير كل 15 ث' : 'Rotating 15s'}
                         </span>
                       </div>
                     </div>
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg flex items-center justify-between">
                       <div>
                         <span className="font-bold text-[var(--text-primary)] block">
-                          Course Exclusion Roster
+                          {isRTL ? 'كشف الطلاب المهددين بالحرمان' : 'Course Exclusion Roster'}
                         </span>
                         <span className="text-[11px] text-[var(--text-muted)]">
-                          2 students flagged below 75%
+                          {isRTL ? 'طالبان تحت حد الـ 75%' : '2 students flagged below 75%'}
                         </span>
                       </div>
                       <span className="px-2.5 py-1 rounded bg-amber-50 dark:bg-amber-950/50 text-amber-700 dark:text-amber-300 font-bold text-[11px]">
-                        Review Roster
+                        {isRTL ? 'مراجعة الكشف' : 'Review Roster'}
                       </span>
                     </div>
                   </div>
@@ -184,28 +184,28 @@ export default function UserRoles() {
                   <div className="space-y-3 text-xs">
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg">
                       <span className="text-[11px] font-semibold text-[var(--text-muted)] block">
-                        Lab Section Recitation
+                        {isRTL ? 'جلسة المعمل التطبيقي' : 'Lab Section Recitation'}
                       </span>
                       <div className="flex items-center justify-between mt-1">
                         <span className="text-base font-extrabold text-[var(--text-primary)]">
-                          Lab 3B · Distributed SQL
+                          {isRTL ? 'معمل 3B · قواعد البيانات الموزعة' : 'Lab 3B · Distributed SQL'}
                         </span>
                         <span className="text-xs font-bold text-blue-700 dark:text-blue-400">
-                          24/25 Present
+                          {isRTL ? '24 من 25 حاضرون' : '24/25 Present'}
                         </span>
                       </div>
                     </div>
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg flex items-center justify-between">
                       <div>
                         <span className="font-bold text-[var(--text-primary)] block">
-                          Assignment Grading Queue
+                          {isRTL ? 'قائمة تصحيح التكليفات' : 'Assignment Grading Queue'}
                         </span>
                         <span className="text-[11px] text-[var(--text-muted)]">
-                          6 Lab Submissions Pending Review
+                          {isRTL ? '6 تسليمات بانتظار الاعتماد' : '6 Lab Submissions Pending Review'}
                         </span>
                       </div>
                       <span className="px-2.5 py-1 rounded bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 font-bold text-[11px]">
-                        Grade Tasks
+                        {isRTL ? 'رصد الدرجات' : 'Grade Tasks'}
                       </span>
                     </div>
                   </div>
@@ -216,28 +216,28 @@ export default function UserRoles() {
                   <div className="space-y-3 text-xs">
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg">
                       <span className="text-[11px] font-semibold text-[var(--text-muted)] block">
-                        College Attendance Compliance Index
+                        {isRTL ? 'مؤشر التزام الكلية بنسب الحضور' : 'College Attendance Compliance Index'}
                       </span>
                       <div className="flex items-center justify-between mt-1">
                         <span className="text-lg font-extrabold text-[var(--text-primary)]">
-                          91.4% Overall
+                          {isRTL ? '91.4% المعدل العام' : '91.4% Overall'}
                         </span>
                         <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                          Accredited
+                          {isRTL ? 'مطابق للاعتماد' : 'Accredited'}
                         </span>
                       </div>
                     </div>
                     <div className="p-3 bg-[var(--surface)] border border-[var(--border)] rounded-lg flex items-center justify-between">
                       <div>
                         <span className="font-bold text-[var(--text-primary)] block">
-                          Bylaw Exclusion Petitions
+                          {isRTL ? 'التماسات وأعذار الحرمان الأكاديمي' : 'Bylaw Exclusion Petitions'}
                         </span>
                         <span className="text-[11px] text-[var(--text-muted)]">
-                          3 Medical Excuse Requests Pending
+                          {isRTL ? '3 طلبات أعذار طبية قيد الدراسة' : '3 Medical Excuse Requests Pending'}
                         </span>
                       </div>
                       <span className="px-2.5 py-1 rounded bg-rose-50 dark:bg-rose-950/50 text-rose-700 dark:text-rose-300 font-bold text-[11px]">
-                        Dean Action
+                        {isRTL ? 'إجراء العمادة' : 'Dean Action'}
                       </span>
                     </div>
                   </div>

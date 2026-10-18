@@ -6,7 +6,7 @@ import { Icon } from '@/components/common/Icon';
 import { TeamMember } from '@/types';
 
 export default function Team() {
-  const { t } = useLanguage();
+  const { t, isRTL } = useLanguage();
   const members: TeamMember[] = t('team.members');
 
   const memberAccents = ['#1e40af', '#059669', '#2563eb', '#d97706'];
@@ -23,7 +23,7 @@ export default function Team() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-semibold backdrop-blur-md shadow-inner mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span>Engineering & Research Group</span>
+            <span>{isRTL ? 'فريق البحث وهندسة النظم الأكاديمية' : 'Engineering & Research Group'}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             {t('team.sectionTitle')}

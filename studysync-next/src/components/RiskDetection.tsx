@@ -20,7 +20,7 @@ export default function RiskDetection() {
       level: 'safe',
       icon: 'check-circle',
       color: '#059669',
-      badge: 'SAFE',
+      badge: isRTL ? 'آمن' : 'SAFE',
     },
     {
       condition: t('risk.rules.1.condition'),
@@ -28,7 +28,7 @@ export default function RiskDetection() {
       level: 'attention',
       icon: 'zap',
       color: '#d97706',
-      badge: 'ATTENTION',
+      badge: isRTL ? 'تنبيه' : 'ATTENTION',
     },
     {
       condition: t('risk.rules.2.condition'),
@@ -36,7 +36,7 @@ export default function RiskDetection() {
       level: 'risk',
       icon: 'alert',
       color: '#ea580c',
-      badge: 'WARNING',
+      badge: isRTL ? 'إنذار' : 'WARNING',
     },
     {
       condition: t('risk.rules.3.condition'),
@@ -44,7 +44,7 @@ export default function RiskDetection() {
       level: 'critical',
       icon: 'alert',
       color: '#dc2626',
-      badge: 'EXCLUSION',
+      badge: isRTL ? 'حرمان' : 'EXCLUSION',
     },
     {
       condition: t('risk.rules.4.condition'),
@@ -52,7 +52,7 @@ export default function RiskDetection() {
       level: 'risk',
       icon: 'calendar',
       color: '#ea580c',
-      badge: 'DEFICIT',
+      badge: isRTL ? 'عجز مهام' : 'DEFICIT',
     },
     {
       condition: t('risk.rules.5.condition'),
@@ -60,7 +60,7 @@ export default function RiskDetection() {
       level: 'critical',
       icon: 'chart',
       color: '#dc2626',
-      badge: 'PROBATION',
+      badge: isRTL ? 'مراقبة' : 'PROBATION',
     },
   ];
 
@@ -226,10 +226,14 @@ export default function RiskDetection() {
                   aria-label="GPA Score Slider"
                 />
                 <div className="flex justify-between text-[11px] font-mono text-slate-500 mt-1.5 font-semibold">
-                  <span className="text-rose-400 font-bold">1.0 (&lt;2.0 Probation)</span>
+                  <span className="text-rose-400 font-bold">
+                    {isRTL ? '1.0 (أقل من 2.0 إنذار)' : '1.0 (<2.0 Probation)'}
+                  </span>
                   <span>2.0</span>
                   <span>3.0</span>
-                  <span className="text-emerald-400 font-bold">4.0 (Dean's List)</span>
+                  <span className="text-emerald-400 font-bold">
+                    {isRTL ? '4.0 (لوحة الشرف)' : "4.0 (Dean's List)"}
+                  </span>
                 </div>
               </div>
             </div>

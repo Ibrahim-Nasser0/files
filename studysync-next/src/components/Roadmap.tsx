@@ -12,7 +12,7 @@ export default function Roadmap() {
   const phases: RoadmapPhase[] = [
     {
       id: 0,
-      phaseNum: 'Phase 01',
+      phaseNum: isRTL ? 'المرحلة 01' : 'Phase 01',
       title: t('roadmap.phases.0.title'),
       icon: 'check',
       status: isRTL ? 'مكتمل / الإصدار الأساسي' : 'Production Core / Released',
@@ -29,7 +29,7 @@ export default function Roadmap() {
     },
     {
       id: 1,
-      phaseNum: 'Phase 02',
+      phaseNum: isRTL ? 'المرحلة 02' : 'Phase 02',
       title: t('roadmap.phases.1.title'),
       icon: 'zap',
       status: isRTL ? 'قيد التطوير الفعلي' : 'Active Engineering Sprint',
@@ -45,7 +45,7 @@ export default function Roadmap() {
     },
     {
       id: 2,
-      phaseNum: 'Phase 03',
+      phaseNum: isRTL ? 'المرحلة 03' : 'Phase 03',
       title: t('roadmap.phases.2.title'),
       icon: 'layers',
       status: isRTL ? 'مرحلة التصميم والتخطيط' : 'Design & Planning Review',
@@ -60,7 +60,7 @@ export default function Roadmap() {
     },
     {
       id: 3,
-      phaseNum: 'Phase 04',
+      phaseNum: isRTL ? 'المرحلة 04' : 'Phase 04',
       title: t('roadmap.phases.3.title'),
       icon: 'compass',
       status: isRTL ? 'الرؤية المستقبلية' : 'Future Vision Research',

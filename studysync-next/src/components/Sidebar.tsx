@@ -113,7 +113,7 @@ export default function Sidebar() {
                   </span>
                 </div>
                 <span className="text-[9px] font-semibold text-[var(--text-muted)] tracking-wider uppercase truncate">
-                  Campus Platform
+                  {lang === 'ar' ? 'منظومة الحرم الجامعي' : 'Campus Platform'}
                 </span>
               </div>
             )}
@@ -123,7 +123,7 @@ export default function Sidebar() {
           <button
             onClick={() => setIsMobileOpen(false)}
             className="lg:hidden w-8 h-8 rounded-lg border border-[var(--border)] flex items-center justify-center text-[var(--text-secondary)] hover:text-[var(--text-primary)] focus:outline-none"
-            aria-label="Close sidebar"
+            aria-label={lang === 'ar' ? 'إغلاق الشريط الجانبي' : 'Close sidebar'}
           >
             <Icon name="x" size={16} />
           </button>
@@ -136,7 +136,7 @@ export default function Sidebar() {
             className={`w-full flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium border border-[var(--border)] bg-[var(--surface-subtle)] text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:border-blue-500/40 transition-all focus:outline-none ${
               isCollapsed && !isMobileOpen ? 'justify-center px-0' : 'justify-between'
             }`}
-            title="Search modules & actions (⌘K)"
+            title={lang === 'ar' ? 'البحث في الوحدات والإجراءات (⌘K)' : 'Search modules & actions (⌘K)'}
           >
             <div className="flex items-center gap-2 min-w-0">
               <Icon name="search" size={14} className="text-blue-600 dark:text-blue-400 flex-shrink-0" />
@@ -220,7 +220,9 @@ export default function Sidebar() {
               <div className="px-2.5 py-2 rounded-lg bg-[var(--surface)] border border-[var(--border)] flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[10px] font-bold text-[var(--text-secondary)]">Campus Node</span>
+                  <span className="text-[10px] font-bold text-[var(--text-secondary)]">
+                    {lang === 'ar' ? 'عقدة الحرم' : 'Campus Node'}
+                  </span>
                 </div>
                 <span className="text-[10px] font-mono text-emerald-600 dark:text-emerald-400 font-bold">
                   99.98%
@@ -231,7 +233,7 @@ export default function Sidebar() {
               <button
                 onClick={toggleCollapsed}
                 className="hidden lg:flex w-full items-center justify-between px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--surface-subtle)] transition-all focus:outline-none"
-                title="Collapse sidebar rail"
+                title={lang === 'ar' ? 'طي الشريط الجانبي' : 'Collapse sidebar rail'}
               >
                 <span>{lang === 'ar' ? 'طي الشريط' : 'Collapse Rail'}</span>
                 <Icon name={isRTL ? 'chevron-right' : 'panel-close'} size={14} />
@@ -241,7 +243,7 @@ export default function Sidebar() {
             <button
               onClick={toggleCollapsed}
               className="hidden lg:flex w-full items-center justify-center py-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--text-primary)] hover:bg-[var(--surface-subtle)] transition-all focus:outline-none"
-              title="Expand sidebar rail"
+              title={lang === 'ar' ? 'توسيع الشريط الجانبي' : 'Expand sidebar rail'}
             >
               <Icon name={isRTL ? 'chevron-left' : 'panel-open'} size={18} />
             </button>

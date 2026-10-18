@@ -257,8 +257,12 @@ export default function Workflows() {
                         {idx + 1}
                       </div>
                       <div className="flex items-center gap-1.5 text-[10px] font-bold">
-                        <span className="text-slate-400">Phase {idx + 1}</span>
-                        <span className="text-emerald-400 font-semibold">✓ Verified</span>
+                        <span className="text-slate-400">
+                          {isRTL ? `المرحلة ${idx + 1}` : `Phase ${idx + 1}`}
+                        </span>
+                        <span className="text-emerald-400 font-semibold">
+                          {isRTL ? '✓ تم التحقق' : '✓ Verified'}
+                        </span>
                       </div>
                     </div>
 
@@ -301,11 +305,11 @@ export default function Workflows() {
                               {idx + 1}
                             </div>
                             <span className="text-xs font-extrabold uppercase tracking-wider text-slate-300">
-                              Phase {idx + 1}
+                              {isRTL ? `المرحلة ${idx + 1}` : `Phase ${idx + 1}`}
                             </span>
                           </div>
                           <span className="text-[11px] font-bold text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-2 py-0.5 rounded-md">
-                            ✓ Verified
+                            {isRTL ? '✓ تم التحقق' : '✓ Verified'}
                           </span>
                         </div>
 

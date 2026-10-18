@@ -16,7 +16,7 @@ export default function Architecture() {
       name: t('architecture.layers.0.title'),
       badge: t('architecture.layers.0.badge'),
       desc: t('architecture.layers.0.desc'),
-      tags: ['Next.js 15+ App Router', 'TypeScript Strict', 'Tailwind CSS v4', 'Bilingual (RTL/LTR)', 'PWA Offline Sync'],
+      tags: t('architecture.layers.0.tags') || ['Next.js 15+ App Router', 'TypeScript Strict', 'Tailwind CSS v4', 'Bilingual (RTL/LTR)', 'PWA Offline Sync'],
       color: '#1e40af',
     },
     {
@@ -25,7 +25,7 @@ export default function Architecture() {
       name: t('architecture.layers.1.title'),
       badge: t('architecture.layers.1.badge'),
       desc: t('architecture.layers.1.desc'),
-      tags: ['RS256 JWT Signed Tokens', 'Granular RBAC Scopes', 'Leaky Bucket Rate Limiter', 'mTLS / Zero-Trust', 'API Gateway'],
+      tags: t('architecture.layers.1.tags') || ['RS256 JWT Signed Tokens', 'Granular RBAC Scopes', 'Leaky Bucket Rate Limiter', 'mTLS / Zero-Trust', 'API Gateway'],
       color: '#059669',
     },
     {
@@ -34,7 +34,7 @@ export default function Architecture() {
       name: t('architecture.layers.2.title'),
       badge: t('architecture.layers.2.badge'),
       desc: t('architecture.layers.2.desc'),
-      tags: ['Course Enrollment Service', 'Cryptographic QR Validator', 'University Bylaw Engine', 'Curriculum ML API', 'Event Bus'],
+      tags: t('architecture.layers.2.tags') || ['Course Enrollment Service', 'Cryptographic QR Validator', 'University Bylaw Engine', 'Curriculum ML API', 'Event Bus'],
       color: '#d97706',
     },
     {
@@ -43,7 +43,7 @@ export default function Architecture() {
       name: t('architecture.layers.3.title'),
       badge: t('architecture.layers.3.badge'),
       desc: t('architecture.layers.3.desc'),
-      tags: ['PostgreSQL Relational DB', 'Redis Low-Latency Cache', 'AES-256 Encrypted Records', 'Immutable Audit Trails'],
+      tags: t('architecture.layers.3.tags') || ['PostgreSQL Relational DB', 'Redis Low-Latency Cache', 'AES-256 Encrypted Records', 'Immutable Audit Trails'],
       color: '#2563eb',
     },
   ];
@@ -154,10 +154,10 @@ export default function Architecture() {
             </p>
 
             <h4 className="text-xs font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
-              Technical Stack & Security Guardrails:
+              {isRTL ? 'الحزمة التقنية ومعايير الأمان المعتمدة:' : 'Technical Stack & Security Guardrails:'}
             </h4>
             <div className="flex flex-wrap gap-2 mb-8">
-              {currentLayer.tags.map((tag, idx) => (
+              {Array.isArray(currentLayer.tags) && currentLayer.tags.map((tag, idx) => (
                 <span
                   key={idx}
                   className="px-3 py-1 rounded-md bg-[var(--surface-subtle)] border border-[var(--border)] text-xs font-semibold text-[var(--text-primary)]"
@@ -170,15 +170,19 @@ export default function Architecture() {
             <div className="grid grid-cols-2 gap-3 pt-5 border-t border-[var(--border)]">
               <div className="p-3 rounded-lg bg-[var(--surface-subtle)] border border-[var(--border)] text-xs">
                 <span className="text-[var(--text-muted)] block text-[11px] font-bold">
-                  Target Latency
+                  {isRTL ? 'زمن الاستجابة المستهدف' : 'Target Latency'}
                 </span>
-                <span className="font-bold text-[var(--text-primary)]">&lt; 85ms Check-in</span>
+                <span className="font-bold text-[var(--text-primary)]">
+                  {isRTL ? '< 85ms للتسجيل' : '< 85ms Check-in'}
+                </span>
               </div>
               <div className="p-3 rounded-lg bg-[var(--surface-subtle)] border border-[var(--border)] text-xs">
                 <span className="text-[var(--text-muted)] block text-[11px] font-bold">
-                  Audit Standard
+                  {isRTL ? 'معيار التدقيق الأمني' : 'Audit Standard'}
                 </span>
-                <span className="font-bold text-[var(--text-primary)]">ISO 27001 Aligned</span>
+                <span className="font-bold text-[var(--text-primary)]">
+                  {isRTL ? 'مطابق لـ ISO 27001' : 'ISO 27001 Aligned'}
+                </span>
               </div>
             </div>
           </div>

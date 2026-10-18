@@ -280,7 +280,11 @@ export default function CommandPalette() {
                               : 'bg-slate-900 text-slate-400 border border-slate-800'
                           }`}
                         >
-                          {cmd.category}
+                          {cmd.category === 'NAVIGATION'
+                            ? lang === 'ar' ? 'تنقل' : 'NAVIGATION'
+                            : cmd.category === 'ACTIONS'
+                            ? lang === 'ar' ? 'إجراء' : 'ACTIONS'
+                            : lang === 'ar' ? 'نظام' : 'SYSTEM'}
                         </span>
                       </div>
                       <p className={`text-[11px] truncate mt-0.5 ${isSelected ? 'text-blue-100' : 'text-slate-400'}`}>
@@ -321,7 +325,7 @@ export default function CommandPalette() {
           </div>
           <span className="font-mono text-[10px] text-cyan-400 flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            StudySync Command OS
+            {lang === 'ar' ? 'أوامر StudySync OS' : 'StudySync Command OS'}
           </span>
         </div>
       </div>

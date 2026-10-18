@@ -28,7 +28,7 @@ export default function Features() {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-semibold backdrop-blur-md shadow-inner mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-            <span>Platform Architecture & Capabilities</span>
+            <span>{isRTL ? 'معمارية المنظومة والقدرات الوظيفية' : 'Platform Architecture & Capabilities'}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
             {t('features.sectionTitle')}
@@ -65,7 +65,7 @@ export default function Features() {
                     <Icon name="qr" size={22} color="currentColor" />
                   </div>
                   <span className="text-[11px] font-bold text-cyan-400 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/60">
-                    ANTI-PROXY ROTATION
+                    {isRTL ? 'تدوير مضاد للتزوير' : 'ANTI-PROXY ROTATION'}
                   </span>
                 </div>
 
@@ -83,24 +83,36 @@ export default function Features() {
               <div className="p-4 rounded-2xl bg-[#111933]/70 border border-slate-800/80 grid grid-cols-3 gap-3 text-center">
                 <div className="flex flex-col">
                   <span className="text-[10px] font-bold text-slate-400 uppercase">
-                    Rotation Cycle
+                    {isRTL ? 'دورة التدوير' : 'Rotation Cycle'}
                   </span>
-                  <span className="text-sm font-extrabold text-white">15 Seconds</span>
-                  <span className="text-[10px] text-emerald-400 font-semibold">✓ In Sync</span>
+                  <span className="text-sm font-extrabold text-white">
+                    {isRTL ? '15 ثانية' : '15 Seconds'}
+                  </span>
+                  <span className="text-[10px] text-emerald-400 font-semibold">
+                    {isRTL ? '✓ متزامن' : '✓ In Sync'}
+                  </span>
                 </div>
                 <div className="flex flex-col border-x border-slate-800 px-2">
                   <span className="text-[10px] font-bold text-slate-400 uppercase">
-                    Geofence Lock
+                    {isRTL ? 'القفل الجغرافي' : 'Geofence Lock'}
                   </span>
-                  <span className="text-sm font-extrabold text-white">Wi-Fi + GPS</span>
-                  <span className="text-[10px] text-emerald-400 font-semibold">✓ Verified</span>
+                  <span className="text-sm font-extrabold text-white">
+                    {isRTL ? 'واي فاي + GPS' : 'Wi-Fi + GPS'}
+                  </span>
+                  <span className="text-[10px] text-emerald-400 font-semibold">
+                    {isRTL ? '✓ تم التحقق' : '✓ Verified'}
+                  </span>
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] font-bold text-slate-400 uppercase">
-                    Device Lock
+                    {isRTL ? 'قفل الجهاز' : 'Device Lock'}
                   </span>
-                  <span className="text-sm font-extrabold text-white">1 Device / ID</span>
-                  <span className="text-[10px] text-emerald-400 font-semibold">✓ Anti-Fraud</span>
+                  <span className="text-sm font-extrabold text-white">
+                    {isRTL ? 'جهاز واحد / طالب' : '1 Device / ID'}
+                  </span>
+                  <span className="text-[10px] text-emerald-400 font-semibold">
+                    {isRTL ? '✓ حماية من التزوير' : '✓ Anti-Fraud'}
+                  </span>
                 </div>
               </div>
             </div>
@@ -115,7 +127,7 @@ export default function Features() {
                     <Icon name="alert" size={22} color="currentColor" />
                   </div>
                   <span className="text-[11px] font-bold text-amber-400 px-3 py-1 rounded-full bg-amber-950/60 border border-amber-800/60">
-                    BYLAW 75% RADAR
+                    {isRTL ? 'رادار لائحة الـ 75%' : 'BYLAW 75% RADAR'}
                   </span>
                 </div>
 
@@ -135,7 +147,9 @@ export default function Features() {
                   <span className="font-bold text-white">
                     {isRTL ? 'توزيع مستويات الخطورة بالكلية:' : 'Cohort Risk Distribution:'}
                   </span>
-                  <span className="font-bold text-cyan-400">1,240 Total</span>
+                  <span className="font-bold text-cyan-400">
+                    {isRTL ? '1,240 إجمالي' : '1,240 Total'}
+                  </span>
                 </div>
                 <div className="w-full h-2.5 rounded-full bg-slate-900 overflow-hidden flex border border-slate-800">
                   <div className="h-full bg-emerald-500" style={{ width: '88%' }} title="Safe (>85%)" />
@@ -143,9 +157,9 @@ export default function Features() {
                   <div className="h-full bg-rose-500" style={{ width: '3.5%' }} title="Critical (<75%)" />
                 </div>
                 <div className="flex items-center justify-between text-[11px] font-semibold">
-                  <span className="text-emerald-400">● 88% Safe</span>
-                  <span className="text-amber-400">● 8.5% Warning</span>
-                  <span className="text-rose-400">● 3.5% Flagged</span>
+                  <span className="text-emerald-400">{isRTL ? '● 88% آمن' : '● 88% Safe'}</span>
+                  <span className="text-amber-400">{isRTL ? '● 8.5% إنذار' : '● 8.5% Warning'}</span>
+                  <span className="text-rose-400">{isRTL ? '● 3.5% حرمان' : '● 3.5% Flagged'}</span>
                 </div>
               </div>
             </div>
@@ -169,13 +183,13 @@ export default function Features() {
               </div>
               <div className="flex flex-wrap gap-1.5 pt-3 border-t border-slate-800/80">
                 <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-900 border border-slate-700 text-cyan-300">
-                  Microservices
+                  {isRTL ? 'الأنظمة الموزعة' : 'Microservices'}
                 </span>
                 <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-900 border border-slate-700 text-emerald-300">
-                  Kubernetes
+                  {isRTL ? 'الحاويات السحابية' : 'Kubernetes'}
                 </span>
                 <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-slate-900 border border-slate-700 text-indigo-300">
-                  Distributed SQL
+                  {isRTL ? 'قواعد بيانات موزعة' : 'Distributed SQL'}
                 </span>
               </div>
             </div>
@@ -198,8 +212,10 @@ export default function Features() {
                 </p>
               </div>
               <div className="p-3 rounded-xl bg-[#111933]/70 border border-slate-800 flex items-center justify-between text-xs font-bold text-white">
-                <span>Predicted GPA: 3.84</span>
-                <span className="text-emerald-400 font-mono">+0.12 Projected</span>
+                <span>{isRTL ? 'المعدل المتوقع: 3.84' : 'Predicted GPA: 3.84'}</span>
+                <span className="text-emerald-400 font-mono">
+                  {isRTL ? '+0.12 متوقع' : '+0.12 Projected'}
+                </span>
               </div>
             </div>
           )}
@@ -222,7 +238,7 @@ export default function Features() {
               </div>
               <div className="flex items-center gap-2 text-xs font-bold text-cyan-400">
                 <Icon name="check" size={14} />
-                <span>Zero Schedule Collisions Enforced</span>
+                <span>{isRTL ? 'منع تام لأي تعارض في المواعيد' : 'Zero Schedule Collisions Enforced'}</span>
               </div>
             </div>
           )}
@@ -260,7 +276,7 @@ export default function Features() {
                         <Icon name={item.icon} size={16} color="currentColor" />
                       </div>
                       <span className="font-mono text-[11px] font-bold text-slate-500">
-                        MOD #{String(i + 1).padStart(2, '0')}
+                        {isRTL ? `وحدة #${String(i + 1).padStart(2, '0')}` : `MOD #${String(i + 1).padStart(2, '0')}`}
                       </span>
                     </div>
                     <h4 className="text-sm font-bold text-white mb-1.5">

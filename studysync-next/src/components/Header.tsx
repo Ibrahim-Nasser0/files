@@ -66,7 +66,7 @@ export default function Header() {
               </span>
             </div>
             <span className="text-[10px] font-semibold text-[var(--text-muted)] tracking-wider uppercase">
-              Higher Ed Standard
+              {lang === 'ar' ? 'معيار التعليم العالي' : 'Higher Ed Standard'}
             </span>
           </div>
         </a>
@@ -90,7 +90,7 @@ export default function Header() {
           {/* Operational Status Pill */}
           <div
             className="hidden xl:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/40 text-emerald-400 text-xs font-semibold"
-            title="System Operational Status: Online"
+            title={lang === 'ar' ? 'حالة النظام التشغيلية: متصل وبكفاءة' : 'System Operational Status: Online'}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
             <span>v2.6 LTS</span>
@@ -101,7 +101,7 @@ export default function Header() {
             onClick={toggleTheme}
             className="w-8 h-8 rounded-lg border border-slate-800/80 bg-slate-900/60 text-slate-300 hover:text-white hover:bg-slate-800/60 flex items-center justify-center transition-all focus:outline-none"
             aria-label="Toggle Theme Mode"
-            title={theme === 'dark' ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+            title={theme === 'dark' ? (lang === 'ar' ? 'التحويل للوضع الفاتح' : 'Switch to Light Theme') : (lang === 'ar' ? 'التحويل للوضع الداكن' : 'Switch to Dark Theme')}
           >
             <Icon name={theme === 'dark' ? 'sun' : 'moon'} size={15} />
           </button>
@@ -111,7 +111,7 @@ export default function Header() {
             onClick={toggleLang}
             className="inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg border border-slate-800/80 bg-slate-900/60 text-slate-200 hover:bg-slate-800/60 text-xs font-semibold transition-all focus:outline-none"
             aria-label="Toggle Language"
-            title="Switch Language (English / العربية)"
+            title={lang === 'ar' ? 'تبديل اللغة إلى الإنجليزية' : 'Switch to Arabic'}
           >
             <Icon name="globe" size={13} />
             <span className="font-semibold">{lang === 'en' ? 'العربية' : 'English'}</span>
